@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моето портфолио</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header class="header" id="home">
+        <div class="brand">
+            <img src="images/logo.png" class="logo" alt="Лого" />
+            <span class="brand-text">My Portfolio</span>
+        </div>
+
+        <nav class="nav">
+            <a href="#home">Начало</a>
+            <a href="#sliderSection">Слайдер</a>
+            <a href="#about">За нас</a>
+            <a href="#contact">Контакти</a>
+        </nav>
+    </header>
+
+    <main class="page">
+
+        <section id="sliderSection" class="section">
+            <h1>Начална страница</h1>
+
+            <div id="slider" aria-label="Слайдер">
+                <div class="slides-wrapper">
+                    <div class="slide"><img src="images/slide1.jpg" alt="Слайд 1" /></div>
+                    <div class="slide"><img src="images/slide2.jpg" alt="Слайд 2" /></div>
+                    <div class="slide"><img src="images/slide3.jpg" alt="Слайд 3" /></div>
+                </div>
+
+                <button class="arrow arrow-left" type="button" aria-label="Предишен слайд">&#10094;</button>
+                <button class="arrow arrow-right" type="button" aria-label="Следващ слайд">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>За нас</h2>
+
+            <div class="cards">
+
+                <div class="card" onclick="toggleCard(this)">
+                    <h3>Нашата мисия</h3>
+                    <p>
+                        Създаваме чисти, удобни и красиви уеб страници. Вярваме, че добрият дизайн
+                        е прост, подреден и работи еднакво добре на телефон и компютър.
+                    </p>
+                </div>
+
+                <div class="card" onclick="toggleCard(this)">
+                    <h3>Нашата визия</h3>
+                    <p>
+                        Искаме всеки проект да изглежда професионално: ясна типография, правилни
+                        контрасти, приятни цветове и плавни анимации без излишна “тежест”.
+                    </p>
+                </div>
+
+                <div class="card" onclick="toggleCard(this)">
+                    <h3>Как работим</h3>
+                    <p>
+                        Започваме с структура (HTML), после стил (CSS) и накрая интеракции (JS).
+                        Тестваме на различни екрани и оправяме дребните детайли до перфектен вид.
+                    </p>
+                </div>
+
+            </div>
+
+            <p class="hint">Кликни върху кутийка, за да се увеличи. Hover ефектът работи при мишка.</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Контакти</h2>
+            <div class="contact-card">
+                <p><strong>Имейл:</strong> example@mail.com</p>
+                <p><strong>Телефон:</strong> +359 88 123 4567</p>
+                <p><strong>Адрес:</strong> София, България</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
