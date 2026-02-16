@@ -237,3 +237,78 @@ p {
     box-shadow: var(--shadow);
     width: min(520px, 100%);
 }
+
+/* ===== MOBILE FIXES ===== */
+@media (max-width: 720px){
+
+  .header{
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 12px 12px;
+  }
+
+  .brand{
+    justify-content: center;
+  }
+
+  .brand-text{
+    display: none; /* на телефон махаме текста, оставяме само лого */
+  }
+
+  .logo{
+    height: 40px;
+  }
+
+  .nav{
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav a{
+    padding: 10px 14px;
+    font-size: 16px;
+    border-radius: 999px;
+  }
+
+  /* slider да не е огромен */
+  #slider{
+    height: 360px;
+    border-radius: 18px;
+  }
+
+  /* стрелките да са по-удобни за пръст */
+  .arrow{
+    width: 52px;
+    height: 52px;
+    font-size: 30px;
+    border-radius: 16px;
+  }
+
+  /* секциите по-компактни */
+  .section{
+    padding: 26px 14px;
+  }
+
+  /* картите да са една под друга */
+  .cards{
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  /* да не “скача” прекалено при click на мобилен */
+  .card.active{
+    transform: scale(1.02);
+  }
+
+  /* контактната карта да е 100% */
+  .contact-card{
+    width: 100%;
+  }
+}
+
+/* още по-малък телефон */
+@media (max-width: 380px){
+  #slider{ height: 300px; }
+  .nav a{ font-size: 15px; padding: 9px 12px; }
+}
